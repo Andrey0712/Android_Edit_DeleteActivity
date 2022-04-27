@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/layout/activity_register.xml" value="0.159375" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/layout/activity_users.xml" value="0.25" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/layout/card_user.xml" value="0.264" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/layout/progress_dialog.xml" value="0.13020833333333334" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/Android/app/src/main/res/menu/main.xml" value="0.159375" />
+        <entry key="..\:/Study/2022/10.Android - VPU911/Lesson 1. Begin/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/layout/activity_register.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/layout/activity_user.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/layout/activity_user_del.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/layout/card_user.xml" value="0.25" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/layout/progress_dialog.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Nataliy/vpu911Vova/AndroidVPU911/Android/app/src/main/res/menu/main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
