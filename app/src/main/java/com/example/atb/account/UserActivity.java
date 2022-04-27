@@ -44,7 +44,8 @@ public class UserActivity extends BaseActivity {
     private TextInputLayout textFieldPhone;
     private TextInputEditText txtPhone;
 
-    String email;
+    long id;
+    String email="";
     // One Preview Image
     ImageView IVPreviewImage;
     // constant to compare
@@ -57,7 +58,7 @@ public class UserActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
         Bundle b =getIntent().getExtras();
-        //long id = b.getLong("id");
+        //id = b.getLong("id");
         email=b.getString("email");
 
         txtUserEmail = findViewById(R.id.txtUserEmail);
@@ -150,6 +151,7 @@ public class UserActivity extends BaseActivity {
                         } else {
                             try {
                                 showErrorsServer(response.errorBody().string());
+                                CommonUtils.hideLoading();//завершение прогресбара
                             } catch (Exception e) {
                                 System.out.println("------Error response parse body-----");
                             }
@@ -170,7 +172,7 @@ public class UserActivity extends BaseActivity {
     private boolean validationFields(EditDTO editDTO) {
 
         textFieldSecondName.setError("");
-        if (editDTO.getEmail().equals("")) {
+        if (editDTO.getSecondName().equals("")) {
             textFieldSecondName.setError("Вкажіть прізвище");
             return false;
         }
@@ -181,7 +183,7 @@ public class UserActivity extends BaseActivity {
             return false;
         }
         textFieldPhone.setError("");
-        if (editDTO.getFirstName().equals("")) {
+        if (editDTO.getPhone().equals("")) {
             textFieldPhone.setError("Вкажіть номер телефона");
             return false;
         }
