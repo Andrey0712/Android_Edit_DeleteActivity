@@ -15,8 +15,10 @@ import com.example.atb.network.account.AccountService;
 import com.example.atb.network.account.dto.AccountResponseDTO;
 import com.example.atb.network.account.dto.DelDTO;
 import com.example.atb.network.account.dto.LoginDTO;
+import com.example.atb.network.account.dto.ServerErrorDTO;
 import com.example.atb.security.JwtSecurityService;
 import com.example.atb.utils.CommonUtils;
+import com.google.gson.Gson;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -58,6 +60,19 @@ public class UsersActivity extends BaseActivity {
                             );
                             rcvUsers.setAdapter(adapter);
                         }
+                        if(response.code()>=500)//оброботка ошибки
+                        {
+                            try {
+                                String json = response.errorBody().string();
+                                Gson gson = new Gson();
+                                ServerErrorDTO serverError = gson.fromJson(json, ServerErrorDTO.class);
+                                String message = serverError.getError();
+                                Toast.makeText(UsersActivity.this, message, Toast.LENGTH_SHORT).show();
+                            }
+                            catch(Exception ex) {}
+
+                        }
+
                         CommonUtils.hideLoading();//завершение прогресбара
                     }
 

@@ -78,6 +78,7 @@ public class LoginActivity extends BaseActivity {
                             //tvInfo.setText("response is good");
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
+                            finish();
                         } else {
                             try {
                                 showErrorsServer(response.errorBody().string());
